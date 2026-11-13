@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO y Metadatos para Google e IAs -->
+    <title>Documentación Oficial de Zechxel (Wiki) - Lenguaje de Programación por Makebyr</title>
+    <meta name="description" content="Documentación oficial de Zechxel, lenguaje de programación modular y de código abierto creado por Makebyr que transpila a C/C++ e integra HTML nativo (.zh).">
+    <meta name="keywords" content="Zechxel, Makebyr, lenguaje de programación, transpilar C++, .zh, Ditrar, documentación Zechxel">
+    <meta name="author" content="Makebyr">
+    <meta name="robots" content="index, follow">
+    
+    <!-- URL Canónica (Cambia TU-USUARIO por tu usuario real de GitHub) -->
+    <link rel="canonical" href="https://github.io">
+
+    <!-- Datos Estructurados JSON-LD (Ayuda a Google y a las IAs a entender qué es Zechxel) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Documentación Oficial de Zechxel (Wiki)",
+      "description": "Guía oficial, estructura de directorios e instalación del lenguaje de programación modular Zechxel creado por Makebyr.",
+      "author": {
+        "@type": "Organization",
+        "name": "Makebyr"
+      },
+      "about": {
+        "@type": "SoftwareApplication",
+        "name": "Zechxel",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Windows"
+      }
+    }
+    </script>
+
+    <!-- Estilos minimalistas de puro texto legible (Estilo Wiki clásica) -->
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+        nav {
+            background: #f4f4f5;
+            padding: 15px;
+            border: 1px solid #d4d4d8;
+            margin-bottom: 30px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #0056b3;
+            font-weight: 600;
+        }
+        nav a:hover, nav a.activo {
+            text-decoration: underline;
+            color: #000000;
+        }
+        h1, h2, h3 {
+            border-bottom: 1px solid #e4e4e7;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        pre {
+            background-color: #f4f4f5;
+            padding: 15px;
+            border: 1px solid #d4d4d8;
+            overflow-x: auto;
+            font-family: Consolas, Monaco, "Courier New", monospace;
+            font-size: 14px;
+        }
+        code {
+            background-color: #f4f4f5;
+            padding: 2px 5px;
+            font-family: Consolas, Monaco, "Courier New", monospace;
+            font-size: 90%;
+        }
+        blockquote {
+            border-left: 4px solid #3b82f6;
+            margin: 20px 0;
+            padding: 10px 15px;
+            background-color: #eff6ff;
+        }
+        footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #d4d4d8;
+            font-size: 14px;
+            color: #52525b;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menú de navegación entre las 8 páginas -->
+    <nav aria-label="Navegación de la documentación">
+        <strong>Índice de Documentación Zechxel (8 Páginas):</strong>
+        <ul>
+            <li><a href="index.html" class="activo">1. Introducción</a></li>
+            <li><a href="pagina2.html">2. Sintaxis Básica</a></li>
+            <li><a href="pagina3.html">3. Variables y Tipos</a></li>
+            <li><a href="pagina4.html">4. Integración HTML/Web</a></li>
+            <li><a href="pagina5.html">5. Transpilación C/C++</a></li>
+            <li><a href="pagina6.html">6. Personalización (dll.zhr)</a></li>
+            <li><a href="pagina7.html">7. Librerías y Gráficos</a></li>
+            <li><a href="pagina8.html">8. Referencia Avanzada</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal de la documentación -->
+    <main>
+        <article>
+            <header>
+                <h1>Documentación Oficial de Zechxel (Wiki)</h1>
+                <p><strong>Zechxel</strong> es un lenguaje de programación modular y de código abierto creado por <strong>Makebyr</strong>. Está diseñado para ofrecer una sintaxis altamente personalizable que transpila directamente a <strong>C/C++</strong> y permite integrar código <strong>HTML/Web</strong> de forma nativa dentro de archivos con extensión <code>.zh</code>.</p>
+            </header>
+
+            <hr>
+
+            <section id="enlaces-oficiales">
+                <h2>🔗 Enlaces y Recursos Oficiales</h2>
+                <ul>
+                    <li><strong>Descarga Oficial en itch.io:</strong> <a href="https://makebyr-studios.itch.io/zechxel" target="_blank" rel="noopener">Zechxel by Makebyr Products</a></li>
+                    <li><strong>Hub y Comunidad Makebyr:</strong> <a href="https://makebyr.github.io" target="_blank" rel="noopener">Makebyr Official Hub</a></li>
+                    <li><strong>Herramienta de Extracción:</strong> <a href="https://makebyr-studios.itch.io/ditrar" target="_blank" rel="noopener">Ditrar Compressor</a> <em>(utilizada para descomprimir paquetes <code>.dit</code>)</em></li>
+                </ul>
+            </section>
+
+            <hr>
+
+            <section id="estructura-directorio">
+                <h2>📁 Estructura del Directorio</h2>
+                <p>Al descomprimir el paquete oficial con <code>ditrar.exe</code> dentro de una carpeta dedicada (por ejemplo, <code>C:/zechxel</code>), el sistema organiza sus módulos de la siguiente manera:</p>
+
+<pre><code>zechxel/
+└── src/
+    ├── bin/
+    │   └── zh.exe      # Compilador principal de Zechxel (agregar al PATH)
+    ├── edit/
+    │   └── dll.zhr     # Archivo de configuración del Lexer (mapeo de sintaxis original)
+    ├── lib/            # Librerías estándar y dependencias (ej. soporte gráfico/raylib)
+    └── resuerces/
+        ├── zres.o      # Recursos compilados del sistema
+        └── icon.o      # Objeto de recursos para iconos de ejecutables</code></pre>
+
+                <blockquote>
+                    <strong>Nota de instalación:</strong> Asegúrate de añadir la ruta <code>zechxel/src/bin</code> a las <strong>Variables de Entorno (PATH)</strong> de Windows para ejecutar el compilador desde cualquier consola.
+                </blockquote>
+            </section>
+
+            <hr>
+
+            <section id="hola-mundo">
+                <h2>🚀 Cómo hacer un "Hola Mundo" en Zechxel</h2>
+                <p>Ejemplo <code>&lt;pre&gt;&lt;code&gt;</code>...</p>
+                
+<pre><code>
+
+
+#import &lt;stdio.h&gt;
+
+int main() {
+    console.print("Hola Mundo\n");
+    raturn 0;
+}
+
+
+</code></pre>
+            </section>
+        </article>
+    </main>
+
+    <!-- Navegación inferior para facilitar el rastreo de Google y lectura secuencial -->
+    <footer>
+        <span>Página 1 de 8 — Documentación de Zechxel</span>
+        <a href="pagina2.html">Siguiente: 2. Sintaxis Básica &rarr;</a>
+    </footer>
+
+</body>
+</html>
